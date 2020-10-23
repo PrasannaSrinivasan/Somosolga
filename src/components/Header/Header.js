@@ -8,7 +8,5 @@ class Header extends Component{
         // Snadwidch Icon with Dropdown
     }
 }
-
-
 export default Header;
 
