@@ -1,0 +1,94 @@
+.Header {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  z-index: 1000;
+}
+
+.Logo {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.Logo img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.ToggleIcon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 28px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.ToggleIcon div {
+  width: 15px;
+  height: 1px;
+  background-color: #ff0037;
+  margin: 1px 0;
+  padding: 1px;
+}
+
+.NavPanel {
+  height: 100vh;
+  width: 100vw;
+  background: #ff0037;
+  position: absolute;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease-out;
+}
+
+.NavOpen {
+  animation: navSlideDown 0.6s ease-in forwards;
+}
+
+.NavClosed {
+  /*animation: navSlideUp 0.3s ease-out forwards;*/
+  transform: translateY(-100vh);
+}
+
+@keyframes navSlideDown {
+  0% {
+    transform: translateY(-100vh);
+  }
+  30% {
+    transform: translateY(0vh);
+  }
+  50% {
+    transform: translateY(-15vh);
+  }
+  60% {
+    transform: translateY(0vh);
+  }
+  80% {
+    transform: translateY(-7vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}

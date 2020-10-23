@@ -1,0 +1,30 @@
+.VideoSection {
+  height: 100vh;
+  /* width: 100vw; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VideoSection video {
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  object-fit: cover;
+  z-index: -100;
+}
+
+.VideoBlock {
+}
+
+.BannerBlock {
+  width: 40%;
+}
