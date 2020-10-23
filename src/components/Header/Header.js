@@ -1,8 +1,14 @@
-import React from "react";
+import React, {Component} from "react";
 
-const header = (props) = {
+class Header extends Component{
+    render(){
+        return null;
 
+        // Header Logo
+        // Snadwidch Icon with Dropdown
+    }
 }
 
 
-export default header;
+export default Header;
+
