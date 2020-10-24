@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import classes from "./Feed.module.css";
+
+import FeedItem from "./FeedItem/FeedItem";
 
 import thumbnail1 from "../../../assets/images/Foto_abridora-p-1600.jpeg";
 import thumbnail2 from "../../../assets/images/FLAGS_2.gif";
@@ -8,19 +10,23 @@ import thumbnail4 from "../../../assets/images/Gelatina_anillos-p-1600.jpeg";
 import thumbnail5 from "../../../assets/images/Foto-abridora-huevos--p-1600.jpeg";
 import thumbnail6 from "../../../assets/images/VOLLEY_1.gif";
 
-const feed = () => {
-    return (  
-    <div className={classes.Feed}>
-        
-        <img src={thumbnail1} alt="Thumbnail"/ >
-        <img src={thumbnail2} alt="Thumbnail" / >
-        <img src={thumbnail3} alt="Thumbnail" / >
-        <img src={thumbnail4} alt="Thumbnail" / >
-        <img src={thumbnail5} alt="Thumbnail" / >
-        <img src={thumbnail6} alt="Thumbnail" / >
-    </div>
 
-    );
+
+class Feed extends Component{
+    state = {
+        thumbnail: [thumbnail1,thumbnail2,thumbnail3,thumbnail4,thumbnail5,thumbnail6]
+    }
+
+    render(){
+        let feedItems  = this.state.thumbnail.map((item,index) => {
+            return <FeedItem key={index} thumbnailImg={item} />
+        }); 
+        return (  
+            <div className={classes.Feed}>
+                {feedItems}
+            </div>
+        )
+    }
 }
- 
-export default feed;
+
+export default Feed;
