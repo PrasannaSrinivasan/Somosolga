@@ -28,3 +28,13 @@
 .BannerBlock {
   width: 40%;
 }
+
+.scrollDown {
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  font-family: "FA Solid", sans-serif;
+  color: #01d7d9;
+  font-size: 30px;
+}
