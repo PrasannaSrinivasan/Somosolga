@@ -1,0 +1,10 @@
+.MoreInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.MoreInfo p {
+  padding: 45px 0;
+}
