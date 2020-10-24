@@ -6,7 +6,7 @@
 
 .Top {
   position: absolute;
-  top: 0%;
+  /* top: 0%; */
   bottom: auto;
   height: 80px;
 }
@@ -17,7 +17,7 @@
   height: 80px;
 }
 
-.Label {
+/* .Label {
   bottom: -1px;
   position: absolute;
-}
+} */
