@@ -10,7 +10,12 @@ import NavigationLink from "./NavigationLink/NavigationLink";
 class Header extends Component{
     state = {
         navOpen: false,
-        navItems: ["WHAT WE DO", "OUR WORK", "THE DUO", "CONTACT US"]
+        navItems: [
+            {link:"#nogo", label: "WHAT WE DO"},
+            {link:"#nogo", label: "OUR WORK"},
+            {link:"#nogo", label: "THE DUO"},
+            {link:"#nogo", label: "CONTACT US"}
+        ]
     }
 
     toggleNavigation = () => {
@@ -34,7 +39,7 @@ class Header extends Component{
             const items = this.state.navItems.slice(0);
             navLink = <div className={classes.ToggleIcon} onClick={this.toggleNavigation}> <img src={close} alt="Logo" style={{width: "15px"}} /></div>
             navItems = items.map( ( item,index ) =>  (
-                 <NavigationLink key={index} content={item}/>
+                 <NavigationLink key={index} link={item.link} content={item.label}/>
             ))
             //navPanel = <div className={classes.NavPanel}> {{navItems}}  </div>
         }
