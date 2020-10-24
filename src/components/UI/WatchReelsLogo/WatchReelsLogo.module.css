@@ -1,0 +1,14 @@
+.WatchReelsLogo {
+}
+
+.WatchReelsLogo img {
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #fff;
+}

@@ -1,0 +1,12 @@
+.Feed {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Feed img {
+  width: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
