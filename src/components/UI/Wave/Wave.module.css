@@ -1,0 +1,18 @@
+.WaveUp {
+  transform: rotate(180deg);
+}
+.WaveDown {
+}
+
+.Top {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  height: 80px;
+}
+.Bottom {
+  position: absolute;
+  top: auto;
+  bottom: -1px;
+  height: 80px;
+}
