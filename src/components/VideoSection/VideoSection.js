@@ -24,7 +24,7 @@ class VideoSection extends Component {
                 <div className={classes.BannerBlock}>
                     <img src={bannerImage}></img>
                 </div>
-                <WaveUp position="Bottom" design="WaveUp" />
+                <WaveUp position="Bottom" design="WaveUp" textContent="Scroll Down"/>
                     
             </div>
         );

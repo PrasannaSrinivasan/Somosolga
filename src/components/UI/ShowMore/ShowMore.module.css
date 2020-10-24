@@ -1,0 +1,9 @@
+.ShowMore a {
+  padding-bottom: 5px;
+  border-bottom: 5px solid #ff0037;
+  background-color: transparent;
+  color: #ff0037;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+}

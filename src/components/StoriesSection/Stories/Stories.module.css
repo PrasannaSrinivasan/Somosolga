@@ -1,0 +1,14 @@
+.Stories {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Stories > * {
+  padding: 0 0 50px 0;
+}
