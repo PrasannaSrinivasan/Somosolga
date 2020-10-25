@@ -49,14 +49,14 @@ class Header extends Component{
         
         return (
             <React.Fragment>
-                <div class={classes.Header}>
-                    <a href="#nogo" class={classes.Logo} >
+                <div className={classes.Header}>
+                    <a href="#nogo" className={classes.Logo} >
                         <img src={olgaLogo} alt="Logo" />
                     </a>
                     {navLink}
                 
                 </div>
-                <div nameBlock="Nav Panel" className={`${classes.NavPanel} ${navOpen ? classes.NavOpen : classes.NavClosed }`}> 
+                <div className={`${classes.NavPanel} ${navOpen ? classes.NavOpen : classes.NavClosed }`}> 
                     {navItems} 
                     <WatchReels link="#work"/>
                 </div> 
