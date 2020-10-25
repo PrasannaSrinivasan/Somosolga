@@ -1,0 +1,10 @@
+.Partners {
+  width: 100vw;
+  height: 80vh;
+  background-color: #674bb5;
+  display: flex;
+  padding: 5% 10%;
+  justify-content: center;
+
+  box-sizing: border-box;
+}

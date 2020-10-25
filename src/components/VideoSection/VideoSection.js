@@ -4,7 +4,7 @@ import homePageVideo2 from "../../assets/videos/WebEdit-transcode.webm";
 import backgroundImage from  "../../assets/images/WebEdit-poster-00001.jpg";
 import bannerImage from "../../assets/images/titulo_visualstorytellers-02.svg";
 import classes from "./VideoSection.module.css";
-import WaveUp from "../UI/Wave/Wave";
+import Wave from "../UI/Wave/Wave";
 class VideoSection extends Component {
    
     render() { 
@@ -24,7 +24,7 @@ class VideoSection extends Component {
                 <div className={classes.BannerBlock}>
                     <img src={bannerImage}></img>
                 </div>
-                <WaveUp position="Bottom" design="WaveUp" textContent="Scroll Down"/>
+                <Wave position="Bottom" design="WaveUp" > Scroll Down </Wave>
                     
             </div>
         );
