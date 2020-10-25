@@ -1,23 +1,24 @@
 .parallax {
-    /* The image used */
-    background-image: url("../../../assets/images/fondo_seccion_duo.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* The image used */
+  background-image: url("../../../assets/images/fondo_seccion_duo.jpg");
 
-  @media (min-width:401px){
-      .parallax{
-        background-position:center;
-      }
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+@media (min-width: 401px) {
+  .parallax {
+    background-position: center;
   }
-  @media (max-width:400px){
-    .parallax{
-      background-position: -630px;
-    }
+}
+@media (max-width: 400px) {
+  .parallax {
+    background-position: -630px;
+  }
 }

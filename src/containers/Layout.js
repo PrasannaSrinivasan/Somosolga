@@ -92,21 +92,20 @@ class Layout extends Component{
                     <Partners/>
                     <Wave waveColor="purple" position="Bottom" design="WaveDown" view="Out" fontColor="#fff"> ABOUT US</Wave>
                 </Section>
-                <Parallax>
-
-                <Details 
-                    headerContent={<React.Fragment><span>{"WE ARE NOT A STUDIO,"}</span><br/><span>  WE ARE A</span></React.Fragment>}
-                    pageLogo={duoLogo} 
-                    thumbnailLinks={true}
-                    thumbnailList={aboutUsThumbnailList} 
-                    styling={{backgroundColor: "",padding: "0 15%"}} />
-                    <Details 
-                    styling={{backgroundColor: "",padding: "0 15%"}} />
-                   
-
-                </Parallax>
                 <Section>
-                <Wave position="Top" design="WaveUp" view="Out" fontColor="#ff0037" > <a href="#nogo"> CONTACT US </a> </Wave> 
+                    <Parallax>
+                        <Details 
+                            headerContent={<React.Fragment><span>{"WE ARE NOT A STUDIO,"}</span><br/><span>  WE ARE A</span></React.Fragment>}
+                            pageLogo={duoLogo} 
+                            thumbnailLinks={true}
+                            thumbnailList={aboutUsThumbnailList} 
+                            styling={{backgroundColor: "",padding: "0 15%"}} />
+                            <Details 
+                            styling={{backgroundColor: "",padding: "0 15%"}} />
+                    </Parallax>
+                </Section>
+                <Section>
+                    <Wave position="Top" design="WaveUp" view="Out" fontColor="#ff0037" > <a href="#nogo"> CONTACT US </a> </Wave> 
                     <MoreInfo/>
                 </Section>
                 
