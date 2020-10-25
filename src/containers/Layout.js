@@ -18,6 +18,7 @@ import photographyLogo from "../assets/images/titulo_photography-05.svg";
 import animationsLogo from "../assets/images/titulo_animation-06.svg";
 import contactLogo from "../assets/images/titulo_contact-12.svg";
 import stalkUsLogo from "../assets/images/titulo_stalk-13.svg";
+import duoLogo from "../assets/images/titulo_DUO-11.svg";
 
 import tickIcon from "../assets/images/ICO_CHECK.svg";
 import mailIcon from "../assets/images/ICO_MAIL.svg";
@@ -28,8 +29,7 @@ import fbIcon from "../assets/images/ICO_FB.svg";
 import behanceIcon from "../assets/images/ICO_BE.svg";
 import linkedinIcon from "../assets/images/ICO_IN.svg";
 import dribbleIcon from "../assets/images/ICO_BBB.svg";
-
-
+import Parallax from '../components/UI/Parallax/Parallax';
 
 
 
@@ -45,8 +45,12 @@ class Layout extends Component{
             {icon: instaIcon,label: "Instagram", link: "#nogo" },
             {icon: fbIcon ,label: "Facebook", link: "#nogo"},
             {icon: behanceIcon,label: "Behance", link: "#nogo"},
-            {icon: linkedinIcon,label: "Behance", link: "#nogo"},
+            {icon: linkedinIcon,label: "Linkedin", link: "#nogo"},
             {icon: dribbleIcon,label: "Dribble", link: "#nogo" }];
+        const aboutUsThumbnailList = [
+            {icon: tickIcon,label: "DIRECT CONTACT, DEEP UNDERSTANDING", link: "#nogo" },
+            {icon: tickIcon,label: "NO INTERMEDIARIES, LESS HASSLE", link: "#nogo"},
+            {icon: tickIcon,label: "FAST RESPONSES, AGILE RESULTS", link: "#nogo"}];
         
             return (
             <React.Fragment>
@@ -88,9 +92,21 @@ class Layout extends Component{
                     <Partners/>
                     <Wave waveColor="purple" position="Bottom" design="WaveDown" view="Out" fontColor="#fff"> ABOUT US</Wave>
                 </Section>
-                
+                <Parallax>
+
+                <Details 
+                    headerContent={<React.Fragment><span>{"WE ARE NOT A STUDIO,"}</span><br/><span>  WE ARE A</span></React.Fragment>}
+                    pageLogo={duoLogo} 
+                    thumbnailLinks={true}
+                    thumbnailList={aboutUsThumbnailList} 
+                    styling={{backgroundColor: "",padding: "0 15%"}} />
+                    <Details 
+                    styling={{backgroundColor: "",padding: "0 15%"}} />
+                   
+
+                </Parallax>
                 <Section>
-                    {/* <Wave position="Top" design="WaveUp" view="Out" fontColor="#ff0037" > <a href="#nogo"> CONTACT US </a> </Wave>  */}
+                <Wave position="Top" design="WaveUp" view="Out" fontColor="#ff0037" > <a href="#nogo"> CONTACT US </a> </Wave> 
                     <MoreInfo/>
                 </Section>
                 

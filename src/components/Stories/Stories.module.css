@@ -1,5 +1,4 @@
 .Stories {
-  width: 50%;
   box-sizing: border-box;
   padding: 0 9%;
   display: flex;
@@ -11,4 +10,16 @@
 
 .Stories > * {
   padding: 0 0 50px 0;
+}
+
+@media (min-width:824px){
+  .Stories{
+    width: 50%;
+  }
+}
+
+@media (max-width:823px){
+  .Stories{
+    width: 100%;
+  }
 }
