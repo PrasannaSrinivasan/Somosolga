@@ -6,7 +6,7 @@ const waveUp = (props) => {
 return (
     <React.Fragment>
         <img src={wave} className={`${classes[props.position]} ${classes[props.design]}`}></img>
-        {/* <p className={classes.Label}>{props.textContent}</p> */}
+        <p className={`${classes.Label} ${classes[props.position]} ` }>{props.children}</p>
     </React.Fragment>
     );
 }

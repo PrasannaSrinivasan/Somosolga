@@ -7,6 +7,7 @@ import Details from "../components/Details/Details";
 import WatchReels from "../components/UI/WatchReelsLogo/WatchReelsLogo";
 import More from "../components/UI/ShowMore/ShowMore";
 import MoreInfo from "../components/MoreInfo/MoreInfo";
+import Partners from "../components/Partners/Partners";
 
 
 import Curve from "../components/UI/Curve/Curve";
@@ -46,7 +47,8 @@ class Layout extends Component{
             {icon: behanceIcon,label: "Behance", link: "#nogo"},
             {icon: linkedinIcon,label: "Behance", link: "#nogo"},
             {icon: dribbleIcon,label: "Dribble", link: "#nogo" }];
-        return (
+        
+            return (
             <React.Fragment>
                 <Header/>
                 <VideoSection/>
@@ -57,7 +59,7 @@ class Layout extends Component{
                     <Curve position="Bottom" design="CurveDown"/>
                 </Section>
                 <Section>
-                    <Wave position="Top" design="WaveDown" textContent="Services"/>
+                    <Wave position="Top" design="WaveDown" > Services </Wave>
                     <Details 
                         pageLogo={photographyLogo}
                         thumbnailLinks={false} 
@@ -74,11 +76,11 @@ class Layout extends Component{
                         styling={{backgroundColor: " #01d7d9"}} >
                         <WatchReels />
                         </Details>
-                    <Wave position="Bottom" design="WaveUp" textContent="Hire Us"/>
+                    <Wave position="Bottom" design="WaveUp" >Hire Us </Wave>
                 </Section>
                 <MoreInfo/>
                 <Section>
-                    <Wave position="Top" design="WaveDown" textContent="Services"/>
+                    <Wave position="Top" design="WaveDown" > !Hey </Wave>
                     <Details 
                         pageLogo={contactLogo} 
                         thumbnailLinks={true}
@@ -89,8 +91,9 @@ class Layout extends Component{
                         thumbnailLinks={true}
                         thumbnailList={stalkUsThumbnailList} 
                         styling={{backgroundColor: "#01d7d9",padding: "0 15%"}} />
-                     <Wave position="Bottom" design="WaveUp" textContent="Hire Us"/>
+                     <Wave position="Bottom" design="WaveUp" > Mic Drop </Wave>
                 </Section>
+                <Partners/>
                 
             </React.Fragment>
 
