@@ -1,6 +1,5 @@
 .Stories {
   box-sizing: border-box;
-  padding: 0 9%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,11 +14,13 @@
 @media (min-width:824px){
   .Stories{
     width: 50%;
+    padding: 10% 9%;
   }
 }
 
 @media (max-width:823px){
   .Stories{
     width: 100%;
+    padding: 12% 9%;
   }
 }

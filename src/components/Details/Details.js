@@ -9,7 +9,10 @@ class Details extends Component {
                 {
                     this.props.headerContent && <p className={classes.headerContent}>{this.props.headerContent}</p>
                 }
-                <img src={this.props.pageLogo} />
+                {
+                    this.props.pageLogo && <img src={this.props.pageLogo} alt={this.props.textContent?this.props.textContent:"descriptive-text"} />
+                }
+                
                 {
                     this.props.textContent && <p> {this.props.textContent}</p>
                 } 
