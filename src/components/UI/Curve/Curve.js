@@ -5,7 +5,7 @@ const curve = (props) => {
     
 return (
     <React.Fragment>
-        <img src={curveImg} className={`${classes[props.position]} ${classes[props.design]}`}></img>
+        <img src={curveImg} className={`${classes[props.position]} ${classes[props.design]}`} alt=""></img>
     </React.Fragment>
     );
 }

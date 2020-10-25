@@ -7,7 +7,7 @@ class Details extends Component {
         return (
             <div className={classes.Details} style={this.props.styling}>
                 {
-                    this.props.headerContent && <p>{this.props.headerContent}</p>
+                    this.props.headerContent && <p className={classes.headerContent}>{this.props.headerContent}</p>
                 }
                 <img src={this.props.pageLogo} />
                 {
