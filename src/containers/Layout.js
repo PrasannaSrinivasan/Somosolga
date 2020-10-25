@@ -60,14 +60,14 @@ class Layout extends Component{
                     <Wave position="Bottom" design="WaveUp" view="In" fontColor="#000"> Scroll Down </Wave>    
                 </VideoSection>
 
-                <Section>
+                <Section id="whatWeDo">
                     <Curve position="Top" design="CurveUp"/>
                     <Stories />
                     <Feed />
-                    <Curve position="Bottom" design="CurveDown"/>
+                    <Curve position="Bottom" design="CurveDown" />
                 </Section>
 
-                <Section>
+                <Section id="ourWork">
                     <Wave position="Top" design="WaveDown" view="In" fontColor="#000"> Services </Wave>
                     <Details 
                         pageLogo={photographyLogo}
@@ -87,12 +87,12 @@ class Layout extends Component{
                         </Details>
                 </Section>
                 
-                <Section>
+                <Section id="">
                     <Wave waveColor="purple" position="Top" design="WaveUp" view="Out" fontColor="#ffd500" > <a href="#nogo"> HIRE US </a> </Wave> 
                     <Partners/>
                     <Wave waveColor="purple" position="Bottom" design="WaveDown" view="Out" fontColor="#fff"> ABOUT US</Wave>
                 </Section>
-                <Section>
+                <Section id="duo">
                     <Parallax>
                         <Details 
                             headerContent={<React.Fragment><span>{"WE ARE NOT A STUDIO,"}</span><br/><span>  WE ARE A</span></React.Fragment>}
@@ -109,18 +109,18 @@ class Layout extends Component{
                     <MoreInfo/>
                 </Section>
                 
-                <Section>
+                <Section id="contactUs">
                     <Wave position="Top" design="WaveDown" view="In" fontColor="#000"> !Hey </Wave>
                     <Details 
                         pageLogo={contactLogo} 
                         thumbnailLinks={true}
                         thumbnailList={contactThumbnailList} 
-                        styling={{backgroundColor: "#ff0037",padding: "0 15%"}} />
+                        styling={{backgroundColor: "#ff0037",padding: "5% 15%"}} />
                     <Details 
                         pageLogo={stalkUsLogo} 
                         thumbnailLinks={true}
                         thumbnailList={stalkUsThumbnailList} 
-                        styling={{backgroundColor: "#01d7d9",padding: "0 15%"}} />
+                        styling={{backgroundColor: "#01d7d9",padding: "5% 15%"}} />
                      <Wave position="Bottom" design="WaveUp" view="In" > Mic Drop </Wave>
                 </Section>
 

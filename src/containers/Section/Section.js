@@ -6,7 +6,7 @@ class StoriesSection extends Component {
     
     render() { 
         return ( 
-            <div className={classes.StoriesSection}>
+            <div className={classes.StoriesSection} id={this.props.id}>
                 {this.props.children}
             </div>
          );
