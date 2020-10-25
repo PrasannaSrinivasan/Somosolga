@@ -12,8 +12,7 @@
 }
 .Bottom {
   position: absolute;
-  top: auto;
-  bottom: -1px;
+  align-self: flex-end;
   height: 80px;
 }
 
