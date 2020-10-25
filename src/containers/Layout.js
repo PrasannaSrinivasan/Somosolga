@@ -74,7 +74,7 @@ class Layout extends Component{
                         styling={{backgroundColor: " #01d7d9"}} >
                         <WatchReels />
                         </Details>
-                    {/* <Wave position="Bottom" design="WaveUp" textContent="Hire Us"/> */}
+                    <Wave position="Bottom" design="WaveUp" textContent="Hire Us"/>
                 </Section>
                 <MoreInfo/>
                 <Section>
@@ -89,6 +89,7 @@ class Layout extends Component{
                         thumbnailLinks={true}
                         thumbnailList={stalkUsThumbnailList} 
                         styling={{backgroundColor: "#01d7d9",padding: "0 15%"}} />
+                     <Wave position="Bottom" design="WaveUp" textContent="Hire Us"/>
                 </Section>
                 
             </React.Fragment>
