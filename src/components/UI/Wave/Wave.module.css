@@ -6,12 +6,16 @@
   position: absolute;
   /* top: 0%; */
   bottom: auto;
-  height: 80px;
+}
+img.Top{
+  margin-top:-1px;
+}
+img.Bottom{
+  margin-top:4x;
 }
 .Bottom {
   position: absolute;
   align-self: flex-end;
-  height: 80px;
 }
 
 .Label {
@@ -19,3 +23,12 @@
   height: auto;
   font-weight: bold;
 }
+@media (min-width:824px){
+  .Top,img.Bottom{
+    height: 80px;
+  }
+}
+
+@media (max-width:823px){
+}
+

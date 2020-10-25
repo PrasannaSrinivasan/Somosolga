@@ -1,5 +1,4 @@
 .Feed {
-  width: 50%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -9,4 +8,16 @@
   width: 50%;
   object-fit: cover;
   cursor: pointer;
+}
+
+@media (min-width:824px){
+  .Feed{
+    width: 50%;
+  }
+}
+
+@media (max-width:823px){
+  .Feed{
+    width: 100%;
+  }
 }

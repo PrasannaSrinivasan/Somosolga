@@ -15,3 +15,16 @@
 .ThumbnailList a {
   text-decoration: none;
 }
+
+@media (min-width:824px){
+  .ThumbnailList{
+    width: max-content;
+  }
+}
+@media (max-width:823px){
+  .ThumbnailList{
+    word-wrap: break-word;
+    text-align: left;
+  }
+}
+
