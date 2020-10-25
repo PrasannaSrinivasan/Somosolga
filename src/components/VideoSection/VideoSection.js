@@ -4,7 +4,6 @@ import homePageVideo2 from "../../assets/videos/WebEdit-transcode.webm";
 import backgroundImage from  "../../assets/images/WebEdit-poster-00001.jpg";
 import bannerImage from "../../assets/images/titulo_visualstorytellers-02.svg";
 import classes from "./VideoSection.module.css";
-import Wave from "../UI/Wave/Wave";
 class VideoSection extends Component {
    
     render() { 
@@ -15,16 +14,17 @@ class VideoSection extends Component {
         return (
             <div className={classes.VideoSection} >
                 <div className={classes.VideoBlock}>
-                    <video loop autoPlay  playsinline muted style={bgImg}>
+                    <video loop autoPlay  playsInline muted style={bgImg}>
                         <source src={homePageVideo1} type="video/mp4" />
                         <source src={homePageVideo2} type="video/ogg" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div className={classes.BannerBlock}>
-                    <img src={bannerImage}></img>
+                    <img src={bannerImage} alt=" " ></img>
                 </div>
-                <Wave position="Bottom" design="WaveUp" > Scroll Down </Wave>
+                {/* <Wave position="Bottom" design="WaveUp" view="In"> Scroll Down </Wave> */}
+                {this.props.children}
                     
             </div>
         );

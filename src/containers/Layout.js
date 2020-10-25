@@ -51,15 +51,20 @@ class Layout extends Component{
             return (
             <React.Fragment>
                 <Header/>
-                <VideoSection/>
+
+                <VideoSection>
+                    <Wave position="Bottom" design="WaveUp" view="In" fontColor="#000"> Scroll Down </Wave>    
+                </VideoSection>
+
                 <Section>
                     <Curve position="Top" design="CurveUp"/>
                     <Stories />
                     <Feed />
                     <Curve position="Bottom" design="CurveDown"/>
                 </Section>
+
                 <Section>
-                    <Wave position="Top" design="WaveDown" > Services </Wave>
+                    <Wave position="Top" design="WaveDown" view="In" fontColor="#000"> Services </Wave>
                     <Details 
                         pageLogo={photographyLogo}
                         thumbnailLinks={false} 
@@ -76,11 +81,21 @@ class Layout extends Component{
                         styling={{backgroundColor: " #01d7d9"}} >
                         <WatchReels />
                         </Details>
-                    <Wave position="Bottom" design="WaveUp" >Hire Us </Wave>
                 </Section>
-                <MoreInfo/>
+                
                 <Section>
-                    <Wave position="Top" design="WaveDown" > !Hey </Wave>
+                    <Wave waveColor="purple" position="Top" design="WaveUp" view="Out" fontColor="#ffd500" > <a href="#nogo"> HIRE US </a> </Wave> 
+                    <Partners/>
+                    <Wave waveColor="purple" position="Bottom" design="WaveDown" view="Out" fontColor="#fff"> ABOUT US</Wave>
+                </Section>
+                
+                <Section>
+                    {/* <Wave position="Top" design="WaveUp" view="Out" fontColor="#ff0037" > <a href="#nogo"> CONTACT US </a> </Wave>  */}
+                    <MoreInfo/>
+                </Section>
+                
+                <Section>
+                    <Wave position="Top" design="WaveDown" view="In" fontColor="#000"> !Hey </Wave>
                     <Details 
                         pageLogo={contactLogo} 
                         thumbnailLinks={true}
@@ -91,10 +106,9 @@ class Layout extends Component{
                         thumbnailLinks={true}
                         thumbnailList={stalkUsThumbnailList} 
                         styling={{backgroundColor: "#01d7d9",padding: "0 15%"}} />
-                     <Wave position="Bottom" design="WaveUp" > Mic Drop </Wave>
+                     <Wave position="Bottom" design="WaveUp" view="In" > Mic Drop </Wave>
                 </Section>
-                <Partners/>
-                
+
             </React.Fragment>
 
         );

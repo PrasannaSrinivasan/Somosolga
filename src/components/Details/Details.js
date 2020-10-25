@@ -6,7 +6,7 @@ class Details extends Component {
     render() { 
         return (
             <div className={classes.Details} style={this.props.styling}>
-                <img src={this.props.pageLogo} />
+                <img src={this.props.pageLogo} alt=" "/>
                 <p> {this.props.textContent}</p>
                 <ThumbnailList addLinks={this.props.thumbnailLinks} listItems={this.props.thumbnailList} />
                 {this.props.children}
