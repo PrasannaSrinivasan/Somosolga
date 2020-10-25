@@ -6,10 +6,21 @@
 
 .Top {
   position: absolute;
-  height: 80px;
+  margin-top: -1px;
 }
 .Bottom {
   position: absolute;
-  height: 80px;
   align-self: flex-end;
+  margin-bottom: -1px;
+}
+@media (min-width:824px){
+  .Top,.Bottom{
+    height: 80px;
+  }
+}
+
+@media (max-width:823px){
+  .Top,.Bottom{
+    display: none;
+  }
 }
