@@ -6,3 +6,9 @@
   letter-spacing: 2px;
   text-decoration: none;
 }
+
+@media (max-width: 823px) {
+  .ShowMore {
+    margin-bottom: 20px;
+  }
+}
