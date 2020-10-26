@@ -6,7 +6,7 @@ class NavigationLink extends Component {
     render() { 
         return (
             <div className={classes.NavLink}>
-                <a href={this.props.link}>{this.props.content}</a>
+                <a href={this.props.link} onClick={this.props.onClick}>{this.props.content}</a>
             </div>
         )
     }
