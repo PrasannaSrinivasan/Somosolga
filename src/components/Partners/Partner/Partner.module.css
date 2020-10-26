@@ -1,25 +1,17 @@
 .Partner {
-  display: grid;
+  display: flex;
   width: 90%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .Partner img {
   align-self: center;
   justify-self: center;
-  grid-row-start: span 1;
-  grid-row-end: span 1;
-  grid-column-start: span 1;
-  grid-column-end: span 1;
-  width: 100%;
+  width: 150px;
   max-height: 100px;
   vertical-align: middle;
+  padding: 30px;
 }
