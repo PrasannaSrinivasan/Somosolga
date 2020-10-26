@@ -57,7 +57,7 @@ class Layout extends Component{
                 <Header/>
 
                 <VideoSection>
-                    <Wave position="Bottom" design="WaveUp" view="In" fontColor="#000"> Scroll Down </Wave>    
+                    <Wave position="Bottom" design="WaveUp" view="In" fontColor="#000"> <span style={{ color:"#01d7d9", fontWeight: "bolder",fontSize: "30px"}}>↓</span>  </Wave>    
                 </VideoSection>
 
                 <Section id="whatWeDo">
